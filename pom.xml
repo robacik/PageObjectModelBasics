@@ -44,11 +44,11 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
-		<dependency>
-			<groupId>org.uncommons</groupId>
-			<artifactId>reportng</artifactId>
-			<version>${reportng.version}</version>
-		</dependency>
+	  <!--dependency>
+          <groupId>org.uncommons</groupId>
+          <artifactId>reportng</artifactId>
+          <version>${reportng.version}</version>
+      </dependency-->
 
 		<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
 		<dependency>

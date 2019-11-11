@@ -39,7 +39,7 @@ public class Page {
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\com\\w2a\\excel\\testdata.xlsx");
 	public static WebDriverWait wait;
-	public ExtentReports rep = ExtentManager.getInstance();
+    public ExtentReports rep = ExtentManager.getInstance(); //https://www.swtestacademy.com/extentreports-testng/
 	public static ExtentTest test;
 	public static String browser;
 

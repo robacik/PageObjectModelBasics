@@ -9,21 +9,21 @@ import com.w2a.pages.crm.accounts.CreateAccountPage;
 
 public class LoginTest {
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 
 
-		HomePage home = new HomePage();
+		HomePage home = new HomePage(driver);
 		LoginPage lp = home.goToLogin();
-		ZohoAppPage zp = lp.doLogin("trainer@way2automation.com", "Selenium@123");
+		ZohoAppPage zp = lp.doLogin("bluebird@pobox.sk", "Lampa2019!");
 		zp.gotoCRM();
 		AccountsPage account = Page.menu.gotoAccounts();
 		CreateAccountPage cap = account.gotoCreateAccounts();
 		cap.createAccount("Raman");
-		
+
 		//driver.manage.window.maximze()
 
-		
-		
-	}
+
+
+	}*/
 
 }

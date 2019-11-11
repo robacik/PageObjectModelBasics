@@ -3,9 +3,9 @@
 <suite name="Page Object Model">
     
     <listeners>
-       <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-       <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-       <listener class-name="com.w2a.listeners.CustomListeners"/>
+		<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/> -->
+		<!-- <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
+		<listener class-name="com.w2a.listeners.CustomListeners"/>
   </listeners>
     
     
@@ -14,13 +14,14 @@
 			<class name="com.w2a.testcases.LoginTest" />
 		</classes>
 	</test> <!-- Test -->
-	
-	
+
+
+	<!--
 	<test name="Create Account Test">
 		<classes>
 			<class name="com.w2a.testcases.CreateAccountTest" />
 		</classes>
-	</test> <!-- Test -->
-	
-	
+	</test> --> <!-- Test -->
+
+
 </suite> <!-- Suite -->
