@@ -88,9 +88,11 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 	}
 
 	public void onFinish(ISuite arg0) {
-		
+
+		System.out.println("Should send email after finishing execution");
+		/*
 		MonitoringMail mail = new MonitoringMail();
-		 
+
 		try {
 			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
 					+ ":8080/job/LiveProject%20-%20PageObjectModel/Extent_Report/";
@@ -98,7 +100,7 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	
+
 		try {
 			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
 		} catch (AddressException e) {
@@ -107,7 +109,7 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 
 		
 	}
