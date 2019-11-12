@@ -21,13 +21,20 @@ public class LoginPage extends Actions {
 
 	public ZohoAppPage doLogin(String username, String password) throws InterruptedException {
 
-		type_XPATH("//input[@id='lid']", username);
-		Thread.sleep(100);
-		type_XPATH("//input[@id='pwd']", password);
-		click_XPATH("//div[@id='signin_submit']");
+        type_XPATH("//*[@id='login_id']", username);
+        clickOnNextBtn();
+        type_XPATH("//*[@id='password']", password);
+        clickOnNextBtn();
 
 		return new ZohoAppPage();
 	}
+
+
+    private void clickOnNextBtn() throws InterruptedException {
+        click_XPATH("//*[@id='nextbtn']");
+        Thread.sleep(100);
+    }
+
 
 
 	public void gotoSalesandMarketing(){

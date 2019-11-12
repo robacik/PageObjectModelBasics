@@ -35,14 +35,16 @@ public class Page {
 	public static Properties config = new Properties();
 	public static Properties OR = new Properties();
 	public static FileInputStream fis;
-	public static Logger log = Logger.getLogger("devpinoyLogger");
+    public static Logger log = Logger.getLogger("actionLogger");
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\com\\w2a\\excel\\testdata.xlsx");
 	public static WebDriverWait wait;
+
     public ExtentReports rep = ExtentManager.getInstance(); //https://www.swtestacademy.com/extentreports-testng/
 	public static ExtentTest test;
-	public static String browser;
-
+    //toDo:  look on name & description
+    // this.test = new ExtentTest("Test Name 1111 ", "Description  blabla");
+    public static String browser;
 	public static TopMenu menu;
 	/*
 	 * Logs,
