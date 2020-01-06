@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Page Object Model">
-    
+<suite name="TestNG Dadadriver multiple suite"  >
     <listeners>
-		<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/> -->
-		<!-- <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
-		<listener class-name="com.w2a.listeners.CustomListeners"/>
-  </listeners>
-    
-    
-	<test name="Login Test">
-		<classes>
-			<class name="com.w2a.testcases.LoginTest" />
-		</classes>
-	</test> <!-- Test -->
+        <!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/> -->
+        <!-- <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
+        <listener class-name="com.w2a.listeners.CustomListeners"/>
+    </listeners>
+    <!-- suite name="Suite Name" -->
+    <suite-files>
+        <suite-file path="./suiteA.xml" />
+        <suite-file path="./suiteB.xml" />
+        <suite-file path="./suiteC.xml" />
+    </suite-files>
 
 
-	<!--
-	<test name="Create Account Test">
-		<classes>
-			<class name="com.w2a.testcases.CreateAccountTest" />
-		</classes>
-	</test> --> <!-- Test -->
+</suite>
 
-
-</suite> <!-- Suite -->
